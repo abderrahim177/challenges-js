@@ -44,11 +44,11 @@ a{
 }
 a:hover{
     
-    background-color: brown;
+    background-color: rgb(222, 88, 88);
     padding: 5px 15px;
     border-radius: 20px;
      transition: 0.8s;
-     color: black;
+     
      font-weight: 700;
      
 
@@ -66,11 +66,13 @@ a:hover{
     background-image: linear-gradient(black 20%, #010120,#0f022b);
 }
 .box{
-    width:400px;
-    height: 400px;
+    width:500px;
+    height: 500px;
     border: solid 10px rgb(16, 16, 16);
     margin-left: 20px;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .mini_box{
     width: 90px;
@@ -79,8 +81,93 @@ a:hover{
     border-radius: 20px;
     background-color:rgb(153, 44, 44);
     animation-name: box;
-}
-@keyframes box{
-    
+     
+    animation-duration: 3s;      
+    animation-delay: 3s;
+    border-radius: 30px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards ;
 
 }
+@keyframes box{
+     0%{
+        translate: 0 0;
+        rotate: 0deg;
+       
+    }
+    25%{
+        translate: 0 400px;
+        background: gold;
+        rotate: 90deg;
+    }
+    50%{
+        translate: 400px 400px;
+        background: green;
+        rotate: 180deg;
+
+    }
+    75%{
+        translate: 400px 0;
+        background: rebeccapurple;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        rotate: 360deg;
+        background: grey;
+    }
+
+}
+.miduem{
+width: 90px;
+    height: 90px;
+    border: solid rgb(159, 64, 64) ;
+    border-radius: 20px;
+    background-color:rgb(153, 44, 44);
+    animation-name: box1;
+     
+    animation-duration: 3s;      
+    animation-delay: 3s;
+    border-radius: 30px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards ;
+
+}
+
+@keyframes box1{
+     0%{
+        translate: 0 0;
+        rotate: 0deg;
+       
+    }
+    25%{
+        translate:  -400px 0;
+        background: gold;
+        rotate: 90deg;
+    }
+    50%{
+        translate:0 400px;
+        background: green;
+        rotate: 180deg;
+
+    }
+    75%{
+        translate:0  400px ;
+        background: rebeccapurple;
+        rotate: 270deg;
+    }
+    100%{
+        translate: 0 0;
+        rotate: 360deg;
+        background: grey;
+    }
+
+}
+
+   
+
+   
