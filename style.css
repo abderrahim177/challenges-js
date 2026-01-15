@@ -60,11 +60,13 @@ nav{
     margin-right: 20px;
     border: solid gray 1px;
     width: 100px;
-    height: 40px;
+    height: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5px;
+    box-shadow: 2px 2px 10px ;
+    background-image: linear-gradient(to right, #666666 , #979696);
 }
 .image_1{
     width: 35px;
@@ -72,15 +74,17 @@ nav{
     border-radius: 50%;
     text-align: center;
     padding-top: 4px;
-    background-color: #bab8b8;
+    background-color: #dedef0;
 }
+
 .section_1{
     margin-top: 5px;
     width: 100%;
     height: 350px;
-    background: url(caption\ \(2\).webp) no-repeat;
+    background: url(anim\ -\ Copie.jpg) no-repeat;
     
 }
+
 
 .section_1{
     display: flex;
@@ -116,20 +120,21 @@ form{
     
 }
 ::placeholder{
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    color: #171717;
     
 }
 ::placeholder:hover{
     cursor: pointer;
 }
-
-
-
 form input{
     
     outline: none;
-
+}
+.text_1{
+    height: 40px;
+    width: 650px;
+    
 }
 
 
@@ -290,7 +295,7 @@ font-size: 30px;
     align-items: center;
     width: 500px;
     height: 150px;
-    background-color: #232222;
+    background-color: #2f2e2e;
     margin: 5px;
     color: white;
     font-size: 30px;
@@ -307,8 +312,8 @@ font-size: 30px;
 #box_3{
     background: url(beach_3.jfif);
 }
-#box_4{
-    background: url(beach_4.jfif);
+#box_6{
+    background:url(beach.ab.jpg);
 }
 #box_5{
     background: url(beach_5.jpg);
@@ -474,6 +479,11 @@ align-items: center;
     border-radius:8px 8px 0 0;
     background: url(city1.jpg);
 }
+.section_7 .abdo_1:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s;
+}
 .abdo_1 img{
     margin-top: 2px;
     margin-left: 270px;
@@ -487,10 +497,16 @@ align-items: center;
     border-radius: 8px 8px 0 0;
     background: url(city2.jpg);
 }
+.section_7 .abdo_2:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s;
+}
 .abdo_2 img{
     margin-top: 2px;
     margin-left: 270px;
     background-color: #ffffffc2;
+    
 }
 .section_7 .abdo_3{
     width: 320px;
@@ -499,11 +515,17 @@ align-items: center;
     border-radius:8px 8px 0 0;
     background: url(city3.jpg);
 }
+.section_7 .abdo_3:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s;
+}
 .abdo_3 img{
     margin-top: 2px;
     margin-left: 270px;
     background-color: #ffffffc2;
 }
+
 .section_7 .abdo_4{
     margin-right: 10px;
     width: 320px;
@@ -512,8 +534,14 @@ align-items: center;
     border-radius:8px 8px 0 0;
     background: url(city4.png);
 }
+.section_7 .abdo_4:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px black;
+    transition: 0.5s;
+}
 #box_4{
     background: url(box_4.jpg);
+
 }
 .abdo_4 img{
     margin-top: 2px;
@@ -547,7 +575,7 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(239, 253, 249);
+    background-color: #dbfcf3;
     min-width: 400px;
     flex-wrap: wrap;
 }
@@ -823,7 +851,7 @@ background: url(5\ star1.png);
 }
 .section_15{
     width: 100%;
-    height: 600px;
+    height: 650px;
     background-color: black;
     margin-top: 100px;
 }
@@ -881,6 +909,7 @@ background: url(5\ star1.png);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .foter3 div a{
     text-decoration: none;
@@ -893,12 +922,7 @@ ul li{
 .foter3 div a:hover{
 text-decoration: underline;
 }
-hr{
 
-    height: 0.01px;
-    color: rgb(186, 186, 186);
-
-}
 .foter4{
     width: 100%;
     display: flex;
@@ -918,5 +942,49 @@ hr{
     font-size: 10px;
 }
 .foter4 div{
+    margin-top: 5px;
     display: flex;
+    gap: 20px;
+}
+.span_A{
+    display: flex;
+    flex-direction: column;
+     width: 110px;
+}
+.span_B{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+.brend{
+    height:80px;
+    padding: 5px;
+    border: solid white 1px;
+    border-radius: 20px;
+    display: flex;align-items: center;
+    line-height: 1px;
+}
+.brend i{
+    
+}
+.foter5{
+    width: 100%;
+    justify-content: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.foter5 a{
+    color: white;
+    text-decoration: none;
+    
+}
+.foter5 a:hover{
+text-decoration: underline;
 }
